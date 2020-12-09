@@ -1,0 +1,17 @@
+<ActionBar title="EI">
+</ActionBar>
+<DockLayout stretchLastChild="true">
+    <Label dock="top" class="resources" text="£1000"></Label>
+    <FlexboxLayout class="body" dock="bottom" flexDirection="column" justifyContent="flex-end">
+        <Button class="color--gold background-color--brown" text="Merchant"></Button>
+        <Button class="color--gold background-color--brown" text="Barracks"></Button>
+        <Button class="color--gold background-color--brown" text="Shire"></Button>
+        <Button class="color--gold background-color--brown" text="Spy"></Button>
+        <Button [nsRouterLink]="['/items']" class="color--gold background-color--brown" text="Tower"></Button>
+    </FlexboxLayout>
+    <!-- <AbsoluteLayout dock="bottom" backgroundColor="lightgray">
+        <Label text="10, 0" left="0" top="0" [width]="(mainScreen.widthPixels - 10) / mainScreen.scale" height="50"
+            backgroundColor="pink"></Label>
+    </AbsoluteLayout> -->
+</DockLayout>
+<!-- <ns-dimensions></ns-dimensions> -->
