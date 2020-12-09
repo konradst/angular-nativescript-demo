@@ -5,13 +5,11 @@
     <FlexboxLayout class="body" dock="bottom" flexDirection="column" justifyContent="flex-end">
         <Button class="color--gold background-color--brown" text="Merchant"></Button>
         <Button class="color--gold background-color--brown" text="Barracks"></Button>
-        <Button class="color--gold background-color--brown" text="Shire"></Button>
-        <Button class="color--gold background-color--brown" text="Spy"></Button>
-        <Button [nsRouterLink]="['/items']" class="color--gold background-color--brown" text="Tower"></Button>
+        <Button [nsRouterLink]="['/absolute']" class="color--gold background-color--brown"
+            text="Absolute Layout"></Button>
+        <Button [nsRouterLink]="['/dimensions']" class="color--gold background-color--brown"
+            text="Stack Layout + Screen Variables"></Button>
+        <Button [nsRouterLink]="['/items']" class="color--gold background-color--brown" text="Flex Layout"></Button>
     </FlexboxLayout>
-    <!-- <AbsoluteLayout dock="bottom" backgroundColor="lightgray">
-        <Label text="10, 0" left="0" top="0" [width]="(mainScreen.widthPixels - 10) / mainScreen.scale" height="50"
-            backgroundColor="pink"></Label>
-    </AbsoluteLayout> -->
 </DockLayout>
 <!-- <ns-dimensions></ns-dimensions> -->

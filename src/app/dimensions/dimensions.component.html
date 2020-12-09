@@ -1,1 +1,9 @@
-<Label [text]="testText"></Label>
+<StackLayout>
+    <Label [text]="testText"></Label>
+
+    <Label [text]="'scale: ' + testText.scale"></Label>
+    <Label [text]="'widthPixels: ' + testText.widthPixels"></Label>
+    <Label [text]="'heightPixels: ' + testText.heightPixels"></Label>
+    <Label [text]="'widthDIPs: ' + testText.widthDIPs"></Label>
+    <Label [text]="'heightDIPs: ' + testText.heightDIPs"></Label>
+</StackLayout>
