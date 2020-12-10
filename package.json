@@ -26,6 +26,8 @@
     "@angular/router": "~9.1.0",
     "@nativescript/angular": "~9.0.0",
     "@nativescript/theme": "~2.3.0",
+    "@ngrx/effects": "^9.2.0",
+    "@ngrx/entity": "^9.2.0",
     "@ngrx/store": "^9.2.0",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.5.0",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@angular/compiler-cli": "~9.1.0",
     "@nativescript/schematics": "^9.0.0",
+    "@ngrx/schematics": "^9.2.0",
     "@ngtools/webpack": "~9.1.0",
     "@schematics/angular": "^9.1.12",
     "nativescript-dev-webpack": "~1.5.0",

@@ -3,8 +3,8 @@
 <DockLayout stretchLastChild="true">
     <Label dock="top" class="resources" text="£1000"></Label>
     <FlexboxLayout class="body" dock="bottom" flexDirection="column" justifyContent="flex-end">
-        <Button class="color--gold background-color--brown" text="Merchant"></Button>
-        <Button class="color--gold background-color--brown" text="Barracks"></Button>
+        <Button class="color--gold background-color--brown" text="Cards {{cards$ | async}}"></Button>
+        <Button (tap)="addCards($event)" class="color--gold background-color--brown" text="Buy cards"></Button>
         <Button [nsRouterLink]="['/absolute']" class="color--gold background-color--brown"
             text="Absolute Layout"></Button>
         <Button [nsRouterLink]="['/dimensions']" class="color--gold background-color--brown"
@@ -12,4 +12,3 @@
         <Button [nsRouterLink]="['/items']" class="color--gold background-color--brown" text="Flex Layout"></Button>
     </FlexboxLayout>
 </DockLayout>
-<!-- <ns-dimensions></ns-dimensions> -->

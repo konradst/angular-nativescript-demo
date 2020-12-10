@@ -7,7 +7,11 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { MenuComponent } from "./menu/menu.component";
 import { DimensionsComponent } from "./dimensions/dimensions.component";
-
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { EffectsModule } from "@ngrx/effects";
+import { AppEffects } from './effects/app.effects';
+import { CardsEffects } from './effects/cards.effects';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -21,7 +25,9 @@ import { DimensionsComponent } from "./dimensions/dimensions.component";
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        StoreModule.forRoot(reducers, { metaReducers }),
+        EffectsModule.forRoot([AppEffects, CardsEffects]),
     ],
     declarations: [
         AppComponent,
