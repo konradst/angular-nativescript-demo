@@ -1,4 +1,5 @@
 <AbsoluteLayout dock="bottom" backgroundColor="lightgray">
-    <Label text="10, 0" left="0" top="0" [width]="(mainScreen.widthPixels - 10) / mainScreen.scale" height="50"
-        backgroundColor="pink"></Label>
+    <Label [text]="'' + mainScreen.widthPixels / 2 + ' x ' + mainScreen.heightPixels / 2" left="0" top="0"
+        [width]="mainScreen.widthPixels / 2 / mainScreen.scale"
+        [height]="mainScreen.heightPixels / 2 / mainScreen.scale" backgroundColor="pink"></Label>
 </AbsoluteLayout>
