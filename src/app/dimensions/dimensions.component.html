@@ -6,4 +6,18 @@
     <Label [text]="'heightPixels: ' + mainScreen.heightPixels"></Label>
     <Label [text]="'widthDIPs: ' + mainScreen.widthDIPs"></Label>
     <Label [text]="'heightDIPs: ' + mainScreen.heightDIPs"></Label>
+
+
+    <Label [text]="geoText$ | async"></Label>
+    <ng-container *ngIf="(geoLocation$ | async) as geoLocation">
+        <Label [text]="'latitude: ' + geoLocation.latitude"></Label>
+        <Label [text]="'longitude: ' + geoLocation.longitude"></Label>
+        <Label [text]="'altitude: ' + geoLocation.altitude"></Label>
+        <Label [text]="'horizontalAccuracy: ' + geoLocation.horizontalAccuracy"></Label>
+        <Label [text]="'verticalAccuracy: ' + geoLocation.verticalAccuracy"></Label>
+        <Label [text]="'speed: ' + geoLocation.speed"></Label>
+        <Label [text]="'direction: ' + geoLocation.direction"></Label>
+        <Label [text]="'timestamp: ' + geoLocation.timestamp"></Label>
+    </ng-container>
+
 </StackLayout>
