@@ -12,6 +12,7 @@ import { reducers, metaReducers } from './reducers';
 import { EffectsModule } from "@ngrx/effects";
 import { AppEffects } from './effects/app.effects';
 import { CardsEffects } from './effects/cards.effects';
+import { AbsoluteComponent } from "./absolute/absolute.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -33,6 +34,7 @@ import { CardsEffects } from './effects/cards.effects';
         AppComponent,
         MenuComponent,
         DimensionsComponent,
+        AbsoluteComponent,
         ItemsComponent,
         ItemDetailComponent
     ],
